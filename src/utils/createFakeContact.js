@@ -10,4 +10,4 @@ function createFakeContact ()  {
   };
 }
 
-module.exports = { createFakeContact };
+export default createFakeContact;

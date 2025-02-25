@@ -12,4 +12,4 @@ async function readContacts ()  {
     }
 };
 
-module.exports = { readContacts };
+export default readContacts;

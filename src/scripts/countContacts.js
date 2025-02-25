@@ -1,5 +1,4 @@
-const { readContacts } = require('../utils/readContacts');
-
+import  readContacts  from "../utils/readContacts.js";
 async function countContacts ()  {
 
     try{
@@ -14,3 +13,4 @@ async function countContacts ()  {
 };
 
 countContacts();
+export default countContacts;

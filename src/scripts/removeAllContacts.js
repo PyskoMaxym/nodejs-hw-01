@@ -1,5 +1,4 @@
-const { writeContacts } = require('../utils/writeContacts');
-
+import writeContacts from "../utils/writeContacts.js";
 async function removeAllContacts ()  {
 
     try{
@@ -12,3 +11,5 @@ async function removeAllContacts ()  {
 };
 
 removeAllContacts();
+
+export default removeAllContacts;

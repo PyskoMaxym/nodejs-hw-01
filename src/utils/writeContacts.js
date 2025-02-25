@@ -10,4 +10,4 @@ async function writeContacts (updatedContacts)  {
         }
 };
 
-module.exports = {writeContacts};
+export default writeContacts;
