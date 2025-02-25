@@ -7,7 +7,7 @@ function createFakeContact ()  {
     phone: faker.phone.number(),
     email: faker.internet.email(),
     job: faker.person.jobTitle(),
-  }
-};
+  };
+}
 
 module.exports = { createFakeContact };
