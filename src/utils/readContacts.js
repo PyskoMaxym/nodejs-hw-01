@@ -2,7 +2,7 @@ import { PATH_DB } from '../constants/contacts.js';
 
 const fs = require('fs').promises;
 
-export const readContacts = async () => {
+async function readContacts ()  {
     try{
         const data = await fs.readFile(PATH_DB, 'utf-8');
         return JSON.parse(data);
@@ -11,3 +11,5 @@ export const readContacts = async () => {
         return null;
     }
 };
+
+module.exports = { readContacts };

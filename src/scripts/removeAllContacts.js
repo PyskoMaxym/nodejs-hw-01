@@ -1,6 +1,6 @@
 const { writeContacts } = require('../utils/writeContacts');
 
-export const removeAllContacts = async () => {
+async function removeAllContacts ()  {
 
     try{
         await writeContacts([]);

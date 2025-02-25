@@ -1,6 +1,6 @@
 const { readContacts } = require('../utils/readContacts');
 
-export const countContacts = async () => {
+async function countContacts ()  {
 
     try{
         const contacts = await readContacts() || [];
@@ -13,4 +13,4 @@ export const countContacts = async () => {
     }
 };
 
-console.log(await countContacts());
+countContacts();

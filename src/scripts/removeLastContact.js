@@ -1,6 +1,6 @@
 const { readContacts } = require('../utils/readContacts');
 const { writeContacts } = require('../utils/writeContacts');
-export const removeLastContact = async () => {
+async function removeLastContact ()  {
 
     try{
         const contacts = await readContacts();

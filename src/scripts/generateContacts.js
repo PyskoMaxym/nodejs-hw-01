@@ -2,7 +2,7 @@ const { readContacts } = require('../utils/readContacts');
 const { writeContacts } = require('../utils/writeContacts');
 const { createFakeContact } = require('../utils/createFakeContact');
 
-const generateContacts = async (number) => {
+async function generateContacts (number)  {
 
     try{
         const existingContacts = await readContacts() || [];
